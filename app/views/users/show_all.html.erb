@@ -1,0 +1,21 @@
+<h1>Users</h1>
+
+<table>
+  <tr>
+	<th>Imie</th>
+	<th>Nazwisko</th>
+	<th>Wiek</th>
+  </tr>
+
+<% for user in @users %>
+  <tr>
+	<td><%= user.imie %></td>
+	<td><%= user.nazwisko %></td>
+	<td><%= user.wiek %></td>
+	<td><%= link_to 'Show', :action => "show", :id => user %></td>
+	<td><%= link_to 'Delete', :action => "delete", :id => user%></td>
+  </tr>
+<% end %>
+</table>
+<br/>
+<%= link_to "Add", :action => :add %>

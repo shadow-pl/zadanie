@@ -1,0 +1,24 @@
+<h1>Add</h1>
+
+<% form_for(@user, :url => {:controller => :users, :action => :add, :id => @user}) do |f| %>
+  <%= f.error_messages %>
+  <p>
+	<%= f.label :imie %><br />
+	<%= f.text_field :imie %>
+  </p>
+  <p>
+	<%= f.label :nazwisko %><br />
+	<%= f.text_field :nazwisko %>
+  </p>
+  <p>
+	<%= f.label :wiek %><br />
+	<%= f.text_field :wiek %>
+  </p>
+  <p>
+  
+	<%= f.submit 'add'%>
+  </p>
+<% end %>
+
+<br/>
+<%= link_to "back", :action => "show_all" %>
