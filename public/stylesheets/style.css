@@ -1,0 +1,39 @@
+body{
+       font-family:'Arial';
+       color:white;
+       line-height:100%;
+       background-color:black;
+       margin: 0px 0px 0px 0px;
+    }
+
+#gora{background-color:red;
+      background-image: url('/images/rails.png');
+      background-repeat: no-repeat;
+      background-position: right;
+      padding: 10px 10px;
+   }
+
+table{border-style:groove;
+      vertical-align:top;
+      background-color:black;
+      margin: 10px 10px
+     }
+td{ border:none;
+    text-align:left;
+    vertical-align:top;
+  }  
+
+
+a{ color:white;
+   font-family:Verdana;
+   font-weight:700;
+   text-decoration:none;
+   margin: 5px 10px;
+   }
+
+a:hover{color:gray;}
+
+p{margin:10px 10px;}
+
+form{margin:10px;}
+
