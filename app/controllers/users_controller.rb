@@ -6,6 +6,8 @@ class UsersController < ApplicationController
   def add
     @user = User.new(params[:user])
     @user.save
+    @user.errors.full_messages 
+
   end  
   def show
     @user = User.find(params[:id])

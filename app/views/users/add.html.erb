@@ -1,24 +1,25 @@
 <div id="gora"><h1>Add</h1></div>
 
 <% form_for(@user, :url => {:controller => :users, :action => :add, :id => @user}) do |f| %>
-  <%= f.error_messages %>
-  <p>
+  <tablr>
+  <%= f.error_messages%>
+</table>
 	<%= f.label :imie %><br />
-	<%= f.text_field :imie %>
-  </p>
-  <p>
+	<%= f.text_field :imie %><br />
+  <br />
 	<%= f.label :nazwisko %><br />
-	<%= f.text_field :nazwisko %>
-  </p>
-  <p>
+	<%= f.text_field :nazwisko %><br />
+  <br />
 	<%= f.label :wiek %><br />
-	<%= f.text_field :wiek %>
-  </p>
-  <p>
+	<%= f.text_field :wiek %><br />
+  <br />
+  <%= f.label :wzrost %><br />
+  <%= f.text_field :wzrost %><br />
+  <br />
   
 	<%= f.submit 'add'%>
-  </p>
+
 <% end %>
 
-<br/>
+<br/><br/>
 <%= link_to "back", :action => "show_all" %>

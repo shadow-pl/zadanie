@@ -7,6 +7,8 @@
 	<th>Imie</th>
 	<th>Nazwisko</th>
 	<th>Wiek</th>
+	<th>Wzrost</th>
+	<th>Opcje:</th>
   </tr>
 
 <% for user in @users %>
@@ -14,6 +16,7 @@
 	<td><%= user.imie %></td>
 	<td><%= user.nazwisko %></td>
 	<td><%= user.wiek %></td>
+	<td><%= user.wzrost %></td>
 	<td><%= link_to 'Show', :action => "show", :id => user %></td>
 	<td><%= link_to 'Delete', :action => "delete", :id => user%></td>
   </tr>

@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
-  validates_presence_of :imie, :nazwisko, :wiek
-  validates_numericality_of :wiek
+  validates_presence_of :imie, :nazwisko, :wiek, :wzrost
+  validates_numericality_of :wiek, :wzrost
+
 end
