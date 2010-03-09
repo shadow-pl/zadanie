@@ -12,7 +12,9 @@ body{
       background-position: right;
       padding: 10px 10px;
    }
-
+#blad{background-color:red;
+      padding: 10px 10px;
+   }
 table{border-style:groove;
       vertical-align:top;
       background-color:black;

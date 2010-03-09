@@ -1,10 +1,13 @@
 <div id="gora"><h1>Add</h1></div>
-
+  <table id="blad">
+  <% @user.errors.each do |attr,msg| %>
+  <tr><td> 
+  <%=  "#{attr} - #{msg}" %>
+  </td></tr>
+  <% end %>
+  </table>
 <% form_for(@user, :url => {:controller => :users, :action => :add, :id => @user}) do |f| %>
-  <tablr>
-  <%= f.error_messages%>
-</table>
-	<%= f.label :imie %><br />
+  <%= f.label :imie %><br />
 	<%= f.text_field :imie %><br />
   <br />
 	<%= f.label :nazwisko %><br />
