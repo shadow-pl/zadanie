@@ -6,6 +6,7 @@
   </td></tr>
   <% end %>
   </table>
+<div>  
 <% form_for(@user, :url => {:controller => :users, :action => :add, :id => @user}) do |f| %>
   <%= f.label :imie %><br />
 	<%= f.text_field :imie %><br />
@@ -20,9 +21,10 @@
   <%= f.text_field :wzrost %><br />
   <br />
   
-	<%= f.submit 'add'%>
+	<%= f.submit 'add', :action => "show_all"%>
 
 <% end %>
 
 <br/><br/>
 <%= link_to "back", :action => "show_all" %>
+</div>

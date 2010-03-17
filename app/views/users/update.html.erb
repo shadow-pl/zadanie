@@ -1,14 +1,23 @@
 <div id="gora"><h1>Update</h1></div>
-<p>
-Imie: <%= @user.imie %><br/>
-Nazwisko: <%= @user.nazwisko %><br/>
-Wiek: <%= @user.wiek %><br/>
-Wzrost: <%= @user.wzrost %><br/>
-</p>
-<% form_for(@user, :url => {:controller => :users, :action => :update, :id => @user}) do |f| %>
-  <table>
-  <%= f.error_messages%>
+<div>
+  <p>
+    <b>Aktualne dane uzytkownika w bazie danych:</b><br />
+    Imie: <%= @user.imie %><br />
+    Nazwisko: <%= @user.nazwisko %><br />
+    Wiek: <%= @user.wiek %><br/>
+    Wzrost: <%= @user.wzrost %><br/>
+  </p>
+
+<table id="blad">
+    <% @user.errors.each do |attr,msg| %>
+    <tr><td> 
+    <%=  "#{attr} - #{msg}" %>
+    </td></tr>
+    <% end %>
 </table>
+</div>
+<div>  
+  <% form_for(@user, :url => {:controller => :users, :action => :update, :id => @user}) do |f| %>
   <%= f.label :imie %><br />
   <%= f.text_field :imie %><br />
   <br />
@@ -21,10 +30,9 @@ Wzrost: <%= @user.wzrost %><br/>
   <%= f.label :wzrost %><br />
   <%= f.text_field :wzrost %><br />
   <br />
-
   <%= f.submit 'update'%>
-
 <% end %>
 
-<br/><br/>
-<%= link_to "back", :action => "show_all" %>
+<br /><br />
+<%= link_to "Back", :action => "show_all" %>
+</div>
