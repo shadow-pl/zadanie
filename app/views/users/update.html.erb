@@ -7,17 +7,17 @@
     Wiek: <%= @user.wiek %><br/>
     Wzrost: <%= @user.wzrost %><br/>
   </p>
+</div>  
+<div>
+  <table id="blad">
+  <% @user.errors.each do |attr,msg| %>
+  <tr><td> 
+  <%=  "#{attr} - #{msg}" %>
+  </td></tr>
+  <% end %>
+  </table>
 
-<table id="blad">
-    <% @user.errors.each do |attr,msg| %>
-    <tr><td> 
-    <%=  "#{attr} - #{msg}" %>
-    </td></tr>
-    <% end %>
-</table>
-</div>
-<div>  
-  <% form_for(@user, :url => {:controller => :users, :action => :update, :id => @user}) do |f| %>
+<% form_for(@user, :url => {:controller => :users, :action => :update, :id => @user}) do |f| %>
   <%= f.label :imie %><br />
   <%= f.text_field :imie %><br />
   <br />
@@ -30,9 +30,12 @@
   <%= f.label :wzrost %><br />
   <%= f.text_field :wzrost %><br />
   <br />
-  <%= f.submit 'update'%>
-<% end %>
 
+  <%= f.submit 'Update'%>
+
+<% end %>
+</div>
+<div>  
 <br /><br />
 <%= link_to "Back", :action => "show_all" %>
 </div>

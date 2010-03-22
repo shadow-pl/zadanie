@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-   def index
+  def index
     redirect_to :action => 'show_all'
   end
   def show_all
@@ -15,15 +15,27 @@ class UsersController < ApplicationController
     end 
   end  
   def show
-    @user = User.find(params[:id])
+    if User.exists?(:id => params[:id])
+      @user = User.find(params[:id])
+    else
+    redirect_to :action => "error"
+    end
   end
   
   def delete
-    @user = User.find(params[:id])
-    @user.delete
+    if User.exists?(:id => params[:id])
+      @user = User.find(params[:id])
+      @user.delete
+    else
+      redirect_to :action => "error"
+    end
   end
   def update
-    @user = User.find(params[:id])
-    @user.update_attributes(params[:user])
+    if User.exists?(:id => params[:id])
+      @user = User.find(params[:id])
+      @user.update_attributes(params[:user])
+    else
+      redirect_to :action => "error"
+    end
   end
 end
