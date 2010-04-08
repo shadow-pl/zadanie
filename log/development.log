@@ -2,1566 +2,168 @@
   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#index (for 127.0.0.1 at 2010-03-17 21:03:10) [GET]
-Redirected to http://localhost/users/show_all
-Completed in 0ms (DB: 0) | 302 Found [http://localhost/Users/]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (15.6ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-17 21:03:10) [GET]
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-Completed in 281ms (View: 266, DB: 16) | 200 OK [http://localhost/users/show_all]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#delete (for 127.0.0.1 at 2010-03-17 21:03:16) [GET]
-  Parameters: {"id"=>"38"}
-  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 38) [0m
-  [4;36;1mUser Delete all (0.0ms)[0m   [0;1mDELETE FROM `users` WHERE (`id` IN (38)) [0m
-Rendering template within layouts/users
-Rendering users/delete
-Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/users/delete/38]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-17 21:03:20) [GET]
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/show_all]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#update (for 127.0.0.1 at 2010-03-17 21:03:21) [GET]
-  Parameters: {"id"=>"33"}
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 33) [0m
-  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
-Rendering template within layouts/users
-Rendering users/update
-Completed in 2781ms (View: 2750, DB: 0) | 200 OK [http://localhost/users/update/33]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-17 21:13:06) [GET]
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/users/show_all]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#update (for 127.0.0.1 at 2010-03-17 21:13:08) [GET]
-  Parameters: {"id"=>"36"}
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 36) [0m
-  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
-Rendering template within layouts/users
-Rendering users/update
-Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/users/update/36]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-17 21:14:14) [GET]
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/show_all]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#update (for 127.0.0.1 at 2010-03-17 21:17:00) [GET]
-  Parameters: {"id"=>"36"}
-  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 36) [0m
-  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
-Rendering template within layouts/users
-Rendering users/update
-Completed in 62ms (View: 47, DB: 16) | 200 OK [http://localhost/users/update/36]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#update (for 127.0.0.1 at 2010-03-17 21:18:34) [GET]
-  Parameters: {"id"=>"36"}
-  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 36) [0m
-  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
-Rendering template within layouts/users
-Rendering users/update
-Completed in 78ms (View: 31, DB: 16) | 200 OK [http://localhost/users/update/36]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#update (for 127.0.0.1 at 2010-03-17 21:26:51) [GET]
-  Parameters: {"id"=>"3654"}
-  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3654) [0m
-
-ActiveRecord::RecordNotFound (Couldn't find User with ID=3654):
-  app/controllers/users_controller.rb:26:in `update'
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (1046.9ms)
-Rendered rescues/_request_and_response (78.1ms)
-Rendering rescues/layout (not_found)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#upda (for 127.0.0.1 at 2010-03-17 21:27:13) [GET]
-
-ActionController::UnknownAction (No action responded to upda. Actions: add, add_on_empty, delete, index, show, show_all, and update):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendering rescues/layout (not_found)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#upda (for 127.0.0.1 at 2010-03-17 21:33:47) [GET]
-
-ActionController::UnknownAction (No action responded to upda. Actions: add, delete, error, index, show, show_all, and update):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendering rescues/layout (not_found)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#index (for 127.0.0.1 at 2010-03-17 21:33:52) [GET]
-Redirected to http://localhost/users/show_all
-Completed in 0ms (DB: 0) | 302 Found [http://localhost/users/]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-17 21:33:52) [GET]
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/users/show_all]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show (for 127.0.0.1 at 2010-03-17 21:33:56) [GET]
-  Parameters: {"id"=>"33"}
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 33) [0m
-Rendering template within layouts/users
-Rendering users/show
-Completed in 47ms (View: 16, DB: 16) | 200 OK [http://localhost/users/show/33]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show (for 127.0.0.1 at 2010-03-17 21:33:59) [GET]
-  Parameters: {"id"=>"3345646"}
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3345646) [0m
-
-ActiveRecord::RecordNotFound (Couldn't find User with ID=3345646):
-  app/controllers/users_controller.rb:18:in `show'
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (140.6ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (not_found)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show (for 127.0.0.1 at 2010-03-17 21:34:58) [GET]
-  Parameters: {"id"=>"3345646"}
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3345646) [0m
-
-ActiveRecord::RecordNotFound (Couldn't find User with ID=3345646):
-  app/controllers/users_controller.rb:18:in `show'
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (2000.0ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (not_found)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (15.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#sho (for 127.0.0.1 at 2010-03-17 21:35:04) [GET]
-
-ActionController::UnknownAction (No action responded to sho. Actions: add, delete, empty_cart, index, show, show_all, and update):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendering rescues/layout (not_found)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#sho (for 127.0.0.1 at 2010-03-17 21:45:25) [GET]
-
-ActionController::UnknownAction (No action responded to sho. Actions: add, delete, index, show, show_all, unrecognized, and update):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendering rescues/layout (not_found)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#sho (for 127.0.0.1 at 2010-03-17 21:45:27) [GET]
-
-ActionController::UnknownAction (No action responded to sho. Actions: add, delete, index, show, show_all, unrecognized, and update):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendering rescues/layout (not_found)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#sho (for 127.0.0.1 at 2010-03-17 21:45:28) [GET]
-
-ActionController::UnknownAction (No action responded to sho. Actions: add, delete, index, show, show_all, unrecognized, and update):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendering rescues/layout (not_found)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#sho (for 127.0.0.1 at 2010-03-17 21:46:19) [GET]
-
-ActionController::UnknownAction (No action responded to sho. Actions: add, delete, index, show, show_all, unrecognized, and update):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendering rescues/layout (not_found)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#sho (for 127.0.0.1 at 2010-03-17 21:46:21) [GET]
-
-ActionController::UnknownAction (No action responded to sho. Actions: add, delete, index, show, show_all, unrecognized, and update):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendering rescues/layout (not_found)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#index (for 127.0.0.1 at 2010-03-17 21:46:24) [GET]
-Redirected to http://localhost/users/show_all
-Completed in 0ms (DB: 0) | 302 Found [http://localhost/users/]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-17 21:46:24) [GET]
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/users/show_all]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#update (for 127.0.0.1 at 2010-03-17 21:46:29) [GET]
-  Parameters: {"id"=>"33"}
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 33) [0m
-  [4;35;1mSQL (15.6ms)[0m   [0mBEGIN[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
-Rendering template within layouts/users
-Rendering users/update
-Completed in 47ms (View: 16, DB: 16) | 200 OK [http://localhost/users/update/33]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#update (for 127.0.0.1 at 2010-03-17 21:46:32) [GET]
-  Parameters: {"id"=>"323123"}
-  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 323123) [0m
-
-ActiveRecord::RecordNotFound (Couldn't find User with ID=323123):
-  app/controllers/users_controller.rb:26:in `update'
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (218.8ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (not_found)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#update (for 127.0.0.1 at 2010-03-17 21:51:03) [GET]
-  Parameters: {"id"=>"323123"}
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 323123) [0m
-
-ActiveRecord::RecordNotFound (Couldn't find User with ID=323123):
-  app/controllers/users_controller.rb:26:in `update'
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (781.2ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (not_found)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#upda (for 127.0.0.1 at 2010-03-17 21:51:08) [GET]
-
-ActionController::UnknownAction (No action responded to upda. Actions: add, delete, index, show, show_all, and update):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendering rescues/layout (not_found)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#upda (for 127.0.0.1 at 2010-03-17 22:11:32) [GET]
-
-ActionController::UnknownAction (No action responded to upda. Actions: add, delete, index, show, show_all, and update):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendering rescues/layout (not_found)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#upda (for 127.0.0.1 at 2010-03-17 22:11:33) [GET]
-
-ActionController::UnknownAction (No action responded to upda. Actions: add, delete, index, show, show_all, and update):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendering rescues/layout (not_found)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#upda (for 127.0.0.1 at 2010-03-17 22:11:35) [GET]
-
-ActionController::UnknownAction (No action responded to upda. Actions: add, delete, index, show, show_all, and update):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendering rescues/layout (not_found)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#upda (for 127.0.0.1 at 2010-03-17 22:12:53) [GET]
-
-ActionController::UnknownAction (No action responded to upda. Actions: add, delete, index, render_optional_error_file, show, show_all, and update):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendering rescues/layout (not_found)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#upda (for 127.0.0.1 at 2010-03-17 22:12:53) [GET]
-
-ActionController::UnknownAction (No action responded to upda. Actions: add, delete, index, render_optional_error_file, show, show_all, and update):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendering rescues/layout (not_found)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#upda (for 127.0.0.1 at 2010-03-17 22:12:55) [GET]
-
-ActionController::UnknownAction (No action responded to upda. Actions: add, delete, index, render_optional_error_file, show, show_all, and update):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendering rescues/layout (not_found)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#upda (for 127.0.0.1 at 2010-03-17 22:20:05) [GET]
-
-SyntaxError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:29: syntax error, unexpected ':', expecting keyword_then or ';' or '\n'
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:32: syntax error, unexpected ':', expecting keyword_then or ';' or '\n'
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:36: syntax error, unexpected keyword_end, expecting $end):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (1234.4ms)
-Rendered rescues/_request_and_response (15.6ms)
-Rendering rescues/layout (internal_server_error)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#upda (for 127.0.0.1 at 2010-03-17 22:21:07) [GET]
-
-SyntaxError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:29: syntax error, unexpected ':', expecting keyword_then or ';' or '\n'
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:32: syntax error, unexpected ':', expecting keyword_then or ';' or '\n'
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:36: syntax error, unexpected keyword_end, expecting $end):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (125.0ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#index (for 127.0.0.1 at 2010-03-17 22:21:12) [GET]
-
-SyntaxError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:29: syntax error, unexpected ':', expecting keyword_then or ';' or '\n'
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:32: syntax error, unexpected ':', expecting keyword_then or ';' or '\n'
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:36: syntax error, unexpected keyword_end, expecting $end):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (109.4ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#index (for 127.0.0.1 at 2010-03-17 22:23:07) [GET]
-
-SyntaxError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:29: syntax error, unexpected ':', expecting keyword_then or ';' or '\n'
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:31: syntax error, unexpected ':', expecting keyword_then or ';' or '\n'
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:34: syntax error, unexpected keyword_end, expecting $end):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (2203.1ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#index (for 127.0.0.1 at 2010-03-17 22:23:26) [GET]
-
-SyntaxError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:29: syntax error, unexpected ':', expecting keyword_then or ';' or '\n'):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (281.2ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#index (for 127.0.0.1 at 2010-03-17 22:23:38) [GET]
-Redirected to http://localhost/users/show_all
-Completed in 0ms (DB: 0) | 302 Found [http://localhost/users/]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-17 22:23:38) [GET]
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/show_all]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#delete (for 127.0.0.1 at 2010-03-17 22:23:42) [GET]
-  Parameters: {"id"=>"36"}
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 36) [0m
-  [4;35;1mUser Delete all (0.0ms)[0m   [0mDELETE FROM `users` WHERE (`id` IN (36)) [0m
-Rendering template within layouts/users
-Rendering users/delete
-Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/users/delete/36]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-17 22:23:43) [GET]
-  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-Completed in 31ms (View: 16, DB: 16) | 200 OK [http://localhost/users/show_all]
-  [4;36;1mSQL (15.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_allsad (for 127.0.0.1 at 2010-03-17 22:23:47) [GET]
-
-ActionController::UnknownAction (No action responded to show_allsad. Actions: add, delete, index, show, show_all, and update):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendering rescues/layout (not_found)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
-  [4;35;1mSQL (15.6ms)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
-  [4;36;1mSQL (31.2ms)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
-Migrating to CreateUsers (20100220112324)
-  [4;35;1mSQL (0.0ms)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `imie` varchar(255), `nazwisko` varchar(255), `wiek` int(11), `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100220112324')[0m
-Migrating to AddWzrostToUsers (20100304190202)
-  [4;35;1mSQL (15.6ms)[0m   [0mALTER TABLE `users` ADD `wzrost` int(11)[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100304190202')[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-  [4;35;1mSQL (15.6ms)[0m   [0mdescribe `users`[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW KEYS FROM `users`[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#index (for 127.0.0.1 at 2010-03-22 21:10:26) [GET]
-
-ActionController::RoutingError (No route matches "/public/images/rails.png" with {:method=>:get}):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendering rescues/layout (not_found)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#index (for 127.0.0.1 at 2010-03-22 21:10:30) [GET]
+Processing UsersController#index (for 127.0.0.1 at 2010-03-23 00:01:43) [GET]
 Redirected to http://localhost:3000/users/show_all
-Completed in 0ms (DB: 0) | 302 Found [http://localhost/Users]
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/users/]
   [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 21:10:30) [GET]
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-Completed in 156ms (View: 141, DB: 0) | 200 OK [http://localhost/users/show_all]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#add (for 127.0.0.1 at 2010-03-22 21:10:31) [GET]
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-Rendering template within layouts/users
-Rendering users/add
-Completed in 2188ms (View: 2172, DB: 0) | 200 OK [http://localhost/users/add]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#add (for 127.0.0.1 at 2010-03-22 21:10:48) [POST]
-  Parameters: {"authenticity_token"=>"tOKylRy9FsDBpRc8or3mUj1R4rfQ7y8oZBX6SH34vMk=", "user"=>{"imie"=>"Marek", "nazwisko"=>"Stawowy", "wiek"=>"20", "wzrost"=>"186"}, "commit"=>"add"}
-  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-  [4;35;1mSQL (15.6ms)[0m   [0mBEGIN[0m
-  [4;36;1mUser Create (0.0ms)[0m   [0;1mINSERT INTO `users` (`imie`, `nazwisko`, `wiek`, `created_at`, `updated_at`, `wzrost`) VALUES('Marek', 'Stawowy', 20, '2010-03-22 20:10:48', '2010-03-22 20:10:48', 186)[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
-Redirected to http://localhost:3000/users/show_all
-Completed in 31ms (DB: 16) | 302 Found [http://localhost/users/add]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 21:10:48) [GET]
+Processing UsersController#show_all (for 127.0.0.1 at 2010-03-23 00:01:43) [GET]
   [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
 Rendering template within layouts/users
 Rendering users/show_all
   [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users/show_all]
+Completed in 172ms (View: 156, DB: 0) | 200 OK [http://localhost/users/show_all]
   [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#index (for 127.0.0.1 at 2010-03-22 22:28:51) [GET]
-Redirected to http://localhost:3000/users/show_all
-Completed in 0ms (DB: 0) | 302 Found [http://localhost/users/]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 22:28:51) [GET]
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-Completed in 266ms (View: 219, DB: 16) | 200 OK [http://localhost/users/show_all]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show (for 127.0.0.1 at 2010-03-22 22:28:57) [GET]
-  Parameters: {"id"=>"1"}
-  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-  [4;35;1mUser Load (46.9ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
-Rendering template within layouts/users
-Rendering users/show
-Completed in 94ms (View: 47, DB: 47) | 200 OK [http://localhost/users/show/1]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 22:28:59) [GET]
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/users/show_all]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#update (for 127.0.0.1 at 2010-03-22 22:31:37) [GET]
-  Parameters: {"id"=>"1"}
-  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
-Rendering template within layouts/users
-Rendering users/update
-Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/users/update/1]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#update (for 127.0.0.1 at 2010-03-22 22:33:00) [GET]
-  Parameters: {"id"=>"1"}
-  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
-Rendering template within layouts/users
-Rendering users/update
-Completed in 188ms (View: 172, DB: 16) | 200 OK [http://localhost/users/update/1]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 22:33:02) [GET]
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/show_all]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#update (for 127.0.0.1 at 2010-03-22 22:33:05) [GET]
-  Parameters: {"id"=>"1"}
-  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
-Rendering template within layouts/users
-Rendering users/update
-Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/update/1]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 22:35:34) [GET]
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/users/show_all]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#add (for 127.0.0.1 at 2010-03-22 22:35:36) [GET]
-  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-Rendering template within layouts/users
-Rendering users/add
-Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/users/add]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 22:38:34) [GET]
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/users/show_all]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#add (for 127.0.0.1 at 2010-03-22 22:38:53) [GET]
-  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-Rendering template within layouts/users
-Rendering users/add
-Completed in 47ms (View: 16, DB: 16) | 200 OK [http://localhost/users/add]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 22:40:57) [GET]
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/show_all]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#update (for 127.0.0.1 at 2010-03-22 22:40:59) [GET]
-  Parameters: {"id"=>"1"}
-  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
-Rendering template within layouts/users
-Rendering users/update
-Completed in 47ms (View: 31, DB: 16) | 200 OK [http://localhost/users/update/1]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 22:41:31) [GET]
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/show_all]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#show (for 127.0.0.1 at 2010-03-22 22:46:12) [GET]
-  Parameters: {"id"=>"1"}
-
-SyntaxError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:31: syntax error, unexpected '=', expecting keyword_then or ';' or '\n'
-      if :id = nil
-              ^
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:35: syntax error, unexpected keyword_end, expecting $end):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (843.8ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#show (for 127.0.0.1 at 2010-03-22 22:46:30) [GET]
-  Parameters: {"id"=>"1"}
-
-SyntaxError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:31: syntax error, unexpected tASSOC, expecting keyword_then or ';' or '\n'
-      if :id => nil
-               ^
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:35: syntax error, unexpected keyword_end, expecting $end):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (125.0ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#show (for 127.0.0.1 at 2010-03-22 22:46:35) [GET]
-  Parameters: {"id"=>"1"}
-
-SyntaxError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:31: syntax error, unexpected tASSOC, expecting keyword_then or ';' or '\n'
-      if :id => nil
-               ^
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:35: syntax error, unexpected keyword_end, expecting $end):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (1187.5ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#show (for 127.0.0.1 at 2010-03-22 22:48:55) [GET]
-  Parameters: {"id"=>"1"}
-
-SyntaxError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:31: syntax error, unexpected keyword_else
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:35: syntax error, unexpected keyword_end, expecting $end):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (484.4ms)
-Rendered rescues/_request_and_response (15.6ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#show (for 127.0.0.1 at 2010-03-22 22:49:33) [GET]
-  Parameters: {"id"=>"1"}
-
-SyntaxError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:32: syntax error, unexpected keyword_else
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:36: syntax error, unexpected keyword_end, expecting $end):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (109.4ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#show (for 127.0.0.1 at 2010-03-22 22:49:39) [GET]
-  Parameters: {"id"=>"1"}
-
-SyntaxError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:32: syntax error, unexpected keyword_else
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:36: syntax error, unexpected keyword_end, expecting $end):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (93.8ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#update (for 127.0.0.1 at 2010-03-22 22:49:42) [GET]
-  Parameters: {"id"=>"1"}
-
-SyntaxError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:32: syntax error, unexpected keyword_else
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:36: syntax error, unexpected keyword_end, expecting $end):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (1703.1ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#show_all (for 127.0.0.1 at 2010-03-22 22:50:56) [GET]
-
-SyntaxError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:20: syntax error, unexpected keyword_else, expecting ':'
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:33: syntax error, unexpected keyword_end, expecting $end):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (500.0ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#show_all (for 127.0.0.1 at 2010-03-22 22:51:27) [GET]
-
-SyntaxError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:20: syntax error, unexpected keyword_end, expecting ':'
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:34: syntax error, unexpected keyword_end, expecting $end):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (109.4ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#show_all (for 127.0.0.1 at 2010-03-22 22:51:56) [GET]
-
-SyntaxError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:18: syntax error, unexpected ')'
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:20: syntax error, unexpected keyword_end, expecting ')'
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:23: syntax error, unexpected keyword_end, expecting ')'
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:34: syntax error, unexpected keyword_end, expecting ')'):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (734.4ms)
-Rendered rescues/_request_and_response (15.6ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#show_all (for 127.0.0.1 at 2010-03-22 22:52:19) [GET]
-
-SyntaxError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:20: syntax error, unexpected keyword_end, expecting ':'
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:34: syntax error, unexpected keyword_end, expecting $end):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (1437.5ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#show_all (for 127.0.0.1 at 2010-03-22 22:52:51) [GET]
-
-SyntaxError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:20: syntax error, unexpected keyword_else, expecting ':'
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:33: syntax error, unexpected keyword_end, expecting $end):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (140.6ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#show_all (for 127.0.0.1 at 2010-03-22 22:53:55) [GET]
-
-SyntaxError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:18: syntax error, unexpected tASSOC, expecting ')'
-    if (:id => nil)?
-              ^
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:19: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
-      redirect_to :action => "error"
-                   ^
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:34: syntax error, unexpected keyword_end, expecting $end):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (109.4ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#show_all (for 127.0.0.1 at 2010-03-22 22:55:24) [GET]
-
-SyntaxError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:19: syntax error, unexpected tASSOC, expecting ')'
-    if (@user => nil)?
-                ^
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:20: syntax error, unexpected tSYMBEG, expecting keyword_do or '{' or '('
-      redirect_to :action => "error"
-                   ^
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:32: syntax error, unexpected keyword_end, expecting $end):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (2500.0ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 22:55:49) [GET]
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-Completed in 94ms (View: 31, DB: 0) | 200 OK [http://localhost/users/show_all]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show (for 127.0.0.1 at 2010-03-22 22:55:51) [GET]
-  Parameters: {"id"=>"1"}
-  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
-Rendering template within layouts/users
-Rendering users/show
-
-ActionView::TemplateError (undefined method `imie' for nil:NilClass) on line #7 of app/views/users/show.html.erb:
-4: <div>
-5: <p>
-6: Imie: 
-7: <%= @user.imie %><br/>
-8: Nazwisko: 
-9: <%= @user.nazwisko %><br/>
-10: Wiek: 
-
-    app/views/users/show.html.erb:7
-    <internal:prelude>:8:in `synchronize'
-    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (140.6ms)
-Rendered rescues/_request_and_response (15.6ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 22:56:15) [GET]
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/show_all]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show (for 127.0.0.1 at 2010-03-22 22:56:17) [GET]
-  Parameters: {"id"=>"1"}
-  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
-
-NameError (undefined local variable or method `null' for #<UsersController:0x2902de0>):
-  app/controllers/users_controller.rb:19:in `show'
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (1015.6ms)
-Rendered rescues/_request_and_response (15.6ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 23:01:24) [GET]
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-Completed in 219ms (View: 125, DB: 16) | 200 OK [http://localhost/users/show_all]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show (for 127.0.0.1 at 2010-03-22 23:01:26) [GET]
-  Parameters: {"id"=>"1"}
-  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
-
-NoMethodError (undefined method `exists?' for #<User:0x173d8e0>):
-  app/controllers/users_controller.rb:19:in `show'
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (375.0ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show (for 127.0.0.1 at 2010-03-22 23:02:46) [GET]
-  Parameters: {"id"=>"1"}
-  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
-  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT `users`.id FROM `users` LIMIT 1[0m
-Rendering template within layouts/users
-Rendering users/show
-Completed in 47ms (View: 16, DB: 16) | 200 OK [http://localhost/users/show/1]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 23:02:48) [GET]
-  [4;35;1mUser Load (15.6ms)[0m   [0mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-Completed in 31ms (View: 0, DB: 31) | 200 OK [http://localhost/users/show_all]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show (for 127.0.0.1 at 2010-03-22 23:02:49) [GET]
-  Parameters: {"id"=>"1"}
-  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` LIMIT 1[0m
-Rendering template within layouts/users
-Rendering users/show
-Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/users/show/1]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show (for 127.0.0.1 at 2010-03-22 23:02:54) [GET]
-  Parameters: {"id"=>"123123"}
-  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 123123) [0m
-
-ActiveRecord::RecordNotFound (Couldn't find User with ID=123123):
-  app/controllers/users_controller.rb:18:in `show'
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (109.4ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (not_found)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show (for 127.0.0.1 at 2010-03-22 23:03:35) [GET]
-  Parameters: {"id"=>"123123"}
-  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 123123) [0m
-
-ActiveRecord::RecordNotFound (Couldn't find User with ID=123123):
-  app/controllers/users_controller.rb:18:in `show'
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (1343.8ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (not_found)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 23:03:40) [GET]
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/show_all]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show (for 127.0.0.1 at 2010-03-22 23:03:41) [GET]
-  Parameters: {"id"=>"1"}
-  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` LIMIT 1[0m
-  [4;35;1mCACHE (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
-Rendering template within layouts/users
-Rendering users/show
-Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/users/show/1]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show (for 127.0.0.1 at 2010-03-22 23:03:49) [GET]
-  Parameters: {"id"=>"123123"}
-  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 123123) [0m
-
-ActiveRecord::RecordNotFound (Couldn't find User with ID=123123):
-  app/controllers/users_controller.rb:18:in `show'
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (109.4ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (not_found)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#show (for 127.0.0.1 at 2010-03-22 23:04:55) [GET]
-  Parameters: {"id"=>"123123"}
-
-SyntaxError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:20: syntax error, unexpected keyword_else, expecting ':'
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:33: syntax error, unexpected keyword_end, expecting $end):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (109.4ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#show_all (for 127.0.0.1 at 2010-03-22 23:06:10) [GET]
-
-SyntaxError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:20: syntax error, unexpected keyword_else, expecting ':'
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:33: syntax error, unexpected keyword_end, expecting $end):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (703.1ms)
-Rendered rescues/_request_and_response (15.6ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing ApplicationController#show_all (for 127.0.0.1 at 2010-03-22 23:07:14) [GET]
-
-SyntaxError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:20: syntax error, unexpected keyword_else, expecting ':'
-C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/controllers/users_controller.rb:33: syntax error, unexpected keyword_end, expecting $end):
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (125.0ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 23:07:25) [GET]
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/users/show_all]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show (for 127.0.0.1 at 2010-03-22 23:07:26) [GET]
-  Parameters: {"id"=>"1"}
-  [4;36;1mSQL (62.5ms)[0m   [0;1mSHOW TABLES[0m
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-
-NoMethodError (undefined method `exists' for #<Class:0x28e7a40>):
-  app/controllers/users_controller.rb:18:in `show'
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (640.6ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 23:07:55) [GET]
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-Completed in 297ms (View: 141, DB: 0) | 200 OK [http://localhost/users/show_all]
-  [4;36;1mSQL (15.6ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show (for 127.0.0.1 at 2010-03-22 23:07:58) [GET]
-  Parameters: {"id"=>"1"}
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-
-NoMethodError (undefined method `exists' for #<Class:0x17ab700>):
-  app/controllers/users_controller.rb:18:in `show'
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (421.9ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 23:08:37) [GET]
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/users/show_all]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show (for 127.0.0.1 at 2010-03-22 23:08:39) [GET]
-  Parameters: {"id"=>"1"}
-  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
-
-NoMethodError (undefined method `exists' for #<Class:0x2cc0180>):
-  app/controllers/users_controller.rb:19:in `show'
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (93.8ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show (for 127.0.0.1 at 2010-03-22 23:08:55) [GET]
-  Parameters: {"id"=>"1"}
-  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSHOW TABLES[0m
-
-NoMethodError (undefined method `exists' for #<Class:0x271b7e0>):
-  app/controllers/users_controller.rb:19:in `show'
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (781.2ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 23:09:30) [GET]
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/show_all]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show (for 127.0.0.1 at 2010-03-22 23:09:32) [GET]
-  Parameters: {"id"=>"1"}
-  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
-
-NoMethodError (undefined method `exists' for #<User:0x3815e80>):
-  app/controllers/users_controller.rb:19:in `show'
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (140.6ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 23:14:14) [GET]
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/users/show_all]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show (for 127.0.0.1 at 2010-03-22 23:14:16) [GET]
-  Parameters: {"id"=>"1"}
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSHOW TABLES[0m
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-
-NoMethodError (undefined method `exists' for #<Class:0x2b4ea40>):
-  app/controllers/users_controller.rb:18:in `show'
-  <internal:prelude>:8:in `synchronize'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-  C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-
-Rendered rescues/_trace (109.4ms)
-Rendered rescues/_request_and_response (0.0ms)
-Rendering rescues/layout (internal_server_error)
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show (for 127.0.0.1 at 2010-03-22 23:14:34) [GET]
+Processing UsersController#update (for 127.0.0.1 at 2010-03-23 00:01:49) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
-  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
   [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
 Rendering template within layouts/users
-Rendering users/show
-Completed in 94ms (View: 0, DB: 16) | 200 OK [http://localhost/users/show/1]
+Rendering users/update
+Completed in 94ms (View: 16, DB: 16) | 200 OK [http://localhost/users/update/1]
   [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 23:14:36) [GET]
+Processing UsersController#update (for 127.0.0.1 at 2010-03-23 00:01:55) [PUT]
+  Parameters: {"authenticity_token"=>"tOKylRy9FsDBpRc8or3mUj1R4rfQ7y8oZBX6SH34vMk=", "user"=>{"imie"=>"Marek", "nazwisko"=>"Stawowy", "wiek"=>"21", "wzrost"=>"186"}, "commit"=>"Update", "id"=>"1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Update (15.6ms)[0m   [0mUPDATE `users` SET `wiek` = 21, `updated_at` = '2010-03-22 23:01:55' WHERE `id` = 1[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/update
+Completed in 62ms (View: 16, DB: 31) | 200 OK [http://localhost/users/update/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show_all (for 127.0.0.1 at 2010-03-23 00:01:57) [GET]
   [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
 Rendering template within layouts/users
 Rendering users/show_all
-  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-Completed in 16ms (View: 0, DB: 0) | 200 OK [http://localhost/users/show_all]
+  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/users/show_all]
   [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#show (for 127.0.0.1 at 2010-03-22 23:14:38) [GET]
-  Parameters: {"id"=>"1"}
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
-  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Processing UsersController#add (for 127.0.0.1 at 2010-03-23 00:02:17) [GET]
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
 Rendering template within layouts/users
-Rendering users/show
-Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/show/1]
+Rendering users/add
+Completed in 141ms (View: 125, DB: 16) | 200 OK [http://localhost/users/add]
   [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#show (for 127.0.0.1 at 2010-03-22 23:14:41) [GET]
-  Parameters: {"id"=>"324"}
-  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '324') LIMIT 1[0m
-Redirected to http://localhost:3000/users/error
-Completed in 16ms (DB: 16) | 302 Found [http://localhost/users/show/324]
+Processing UsersController#add (for 127.0.0.1 at 2010-03-23 00:02:32) [POST]
+  Parameters: {"authenticity_token"=>"tOKylRy9FsDBpRc8or3mUj1R4rfQ7y8oZBX6SH34vMk=", "user"=>{"imie"=>"Zdzichu", "nazwisko"=>"Klepaczka", "wiek"=>"13", "wzrost"=>"as"}, "commit"=>"add"}
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/users/add]
   [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#error (for 127.0.0.1 at 2010-03-22 23:14:41) [GET]
+Processing UsersController#add (for 127.0.0.1 at 2010-03-23 00:02:42) [POST]
+  Parameters: {"authenticity_token"=>"tOKylRy9FsDBpRc8or3mUj1R4rfQ7y8oZBX6SH34vMk=", "user"=>{"imie"=>"Zdzichu", "nazwisko"=>"Klepaczka", "wiek"=>"13", "wzrost"=>"21"}, "commit"=>"add"}
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`imie`, `nazwisko`, `wiek`, `created_at`, `updated_at`, `wzrost`) VALUES('Zdzichu', 'Klepaczka', 13, '2010-03-22 23:02:42', '2010-03-22 23:02:42', 21)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/show_all
+Completed in 31ms (DB: 16) | 302 Found [http://localhost/users/add]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show_all (for 127.0.0.1 at 2010-03-23 00:02:42) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/show_all
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 62ms (View: 16, DB: 0) | 200 OK [http://localhost/users/show_all]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-03-23 00:02:47) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '3') LIMIT 1[0m
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 47ms (View: 31, DB: 0) | 200 OK [http://localhost/users/show/3]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-03-23 00:02:53) [GET]
+  Parameters: {"id"=>"555"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '555') LIMIT 1[0m
+Redirected to http://localhost:3000/users/error
+Completed in 16ms (DB: 0) | 302 Found [http://localhost/users/show/555]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#error (for 127.0.0.1 at 2010-03-23 00:02:53) [GET]
 Rendering template within layouts/users
 Rendering users/error
-Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/users/error]
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/users/error]
+  [4;35;1mSQL (15.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show_all (for 127.0.0.1 at 2010-03-23 00:02:56) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/show_all
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 31ms (View: 16, DB: 16) | 200 OK [http://localhost/users/show_all]
+  [4;36;1mSQL (31.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show_all (for 127.0.0.1 at 2010-03-23 09:26:18) [GET]
+  [4;36;1mUser Load (62.5ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/show_all
+  [4;35;1mUser Columns (62.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 766ms (View: 609, DB: 156) | 200 OK [http://localhost/users/show_all]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-03-23 09:27:10) [GET]
+  [4;36;1mUser Columns (31.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 2656ms (View: 2625, DB: 31) | 200 OK [http://localhost/users/add]
   [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 23:14:45) [GET]
+Processing UsersController#show_all (for 127.0.0.1 at 2010-03-23 09:30:32) [GET]
   [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
 Rendering template within layouts/users
 Rendering users/show_all
@@ -1571,17 +173,7 @@ Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/show_all]
   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 23:16:10) [GET]
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users/show_all]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#add (for 127.0.0.1 at 2010-03-22 23:16:12) [GET]
+Processing UsersController#add (for 127.0.0.1 at 2010-03-23 09:39:33) [GET]
   [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
 Rendering template within layouts/users
 Rendering users/add
@@ -1590,95 +182,78 @@ Completed in 31ms (View: 16, DB: 16) | 200 OK [http://localhost/users/add]
   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#add (for 127.0.0.1 at 2010-03-22 23:16:21) [POST]
-  Parameters: {"authenticity_token"=>"tOKylRy9FsDBpRc8or3mUj1R4rfQ7y8oZBX6SH34vMk=", "user"=>{"imie"=>"sdasdas", "nazwisko"=>"asdasd", "wiek"=>"asdasd", "wzrost"=>"asd"}, "commit"=>"add"}
+Processing UsersController#add (for 127.0.0.1 at 2010-03-23 09:39:36) [POST]
+  Parameters: {"authenticity_token"=>"jOnwKpXvZ7E34gRpT40nFL5YI3CNSiGl+1X1m8PkztU=", "user"=>{"imie"=>"", "nazwisko"=>"", "wiek"=>"", "wzrost"=>""}, "commit"=>"add"}
   [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
   [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
   [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
-  [4;36;1mSQL (15.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
 Rendering template within layouts/users
 Rendering users/add
-Completed in 62ms (View: 16, DB: 16) | 200 OK [http://localhost/users/add]
+Completed in 188ms (View: 156, DB: 0) | 200 OK [http://localhost/users/add]
   [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#add (for 127.0.0.1 at 2010-03-22 23:16:26) [POST]
-  Parameters: {"authenticity_token"=>"tOKylRy9FsDBpRc8or3mUj1R4rfQ7y8oZBX6SH34vMk=", "user"=>{"imie"=>"sdasdas", "nazwisko"=>"asdasd", "wiek"=>"123", "wzrost"=>"123"}, "commit"=>"add"}
-  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-  [4;36;1mSQL (31.2ms)[0m   [0;1mBEGIN[0m
-  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`imie`, `nazwisko`, `wiek`, `created_at`, `updated_at`, `wzrost`) VALUES('sdasdas', 'asdasd', 123, '2010-03-22 22:16:26', '2010-03-22 22:16:26', 123)[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
-Redirected to http://localhost:3000/users/show_all
-Completed in 47ms (DB: 31) | 302 Found [http://localhost/users/add]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 23:16:26) [GET]
+Processing UsersController#show_all (for 127.0.0.1 at 2010-03-23 09:40:52) [GET]
   [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
 Rendering template within layouts/users
 Rendering users/show_all
   [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users/show_all]
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/show_all]
   [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#delete (for 127.0.0.1 at 2010-03-22 23:16:28) [GET]
-  Parameters: {"id"=>"2"}
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '2') LIMIT 1[0m
-  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
-  [4;36;1mUser Delete all (46.9ms)[0m   [0;1mDELETE FROM `users` WHERE (`id` IN (2)) [0m
+Processing UsersController#add (for 127.0.0.1 at 2010-03-23 09:40:53) [GET]
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
 Rendering template within layouts/users
-Rendering users/delete
-Completed in 78ms (View: 16, DB: 47) | 200 OK [http://localhost/users/delete/2]
-  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#delete (for 127.0.0.1 at 2010-03-22 23:16:32) [GET]
-  Parameters: {"id"=>"2213123"}
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '2213123') LIMIT 1[0m
-Redirected to http://localhost:3000/users/error
-Completed in 0ms (DB: 0) | 302 Found [http://localhost/users/delete/2213123]
+Rendering users/add
+Completed in 47ms (View: 0, DB: 16) | 200 OK [http://localhost/users/add]
   [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#error (for 127.0.0.1 at 2010-03-22 23:16:32) [GET]
-Rendering template within layouts/users
-Rendering users/error
-Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users/error]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 23:16:36) [GET]
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Processing UsersController#show_all (for 127.0.0.1 at 2010-03-23 09:47:43) [GET]
+  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT * FROM `users` [0m
 Rendering template within layouts/users
 Rendering users/show_all
   [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/show_all]
+Completed in 47ms (View: 16, DB: 16) | 200 OK [http://localhost/users/show_all]
   [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 23:17:14) [GET]
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Processing UsersController#update (for 127.0.0.1 at 2010-03-23 09:47:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (46.9ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
 Rendering template within layouts/users
-Rendering users/show_all
-  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
-Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/users/show_all]
+Rendering users/update
+Completed in 219ms (View: 62, DB: 62) | 200 OK [http://localhost/users/update/1]
+  [4;35;1mSQL (15.6ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-03-23 09:49:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/update
+Completed in 62ms (View: 16, DB: 31) | 200 OK [http://localhost/users/update/1]
   [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#update (for 127.0.0.1 at 2010-03-22 23:17:16) [GET]
+Processing UsersController#update (for 127.0.0.1 at 2010-03-23 09:50:17) [GET]
   Parameters: {"id"=>"1"}
   [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
   [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
@@ -1687,29 +262,670 @@ Processing UsersController#update (for 127.0.0.1 at 2010-03-22 23:17:16) [GET]
   [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
 Rendering template within layouts/users
 Rendering users/update
-Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/users/update/1]
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/users/update/1]
   [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#update (for 127.0.0.1 at 2010-03-22 23:17:21) [GET]
-  Parameters: {"id"=>"32165"}
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '32165') LIMIT 1[0m
-Redirected to http://localhost:3000/users/error
-Completed in 16ms (DB: 0) | 302 Found [http://localhost/users/update/32165]
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
-  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#error (for 127.0.0.1 at 2010-03-22 23:17:21) [GET]
+Processing UsersController#update (for 127.0.0.1 at 2010-03-23 09:50:21) [PUT]
+  Parameters: {"authenticity_token"=>"jOnwKpXvZ7E34gRpT40nFL5YI3CNSiGl+1X1m8PkztU=", "user"=>{"imie"=>"Marek", "nazwisko"=>"Stawowy", "wiek"=>"21", "wzrost"=>"186rew"}, "commit"=>"Update", "id"=>"1"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
 Rendering template within layouts/users
-Rendering users/error
-Completed in 0ms (View: 0, DB: 0) | 200 OK [http://localhost/users/error]
+Rendering users/update
+Completed in 62ms (View: 31, DB: 16) | 200 OK [http://localhost/users/update/1]
   [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 23:17:24) [GET]
+Processing UsersController#update (for 127.0.0.1 at 2010-03-23 09:54:47) [PUT]
+  Parameters: {"authenticity_token"=>"jOnwKpXvZ7E34gRpT40nFL5YI3CNSiGl+1X1m8PkztU=", "user"=>{"imie"=>"Marek", "nazwisko"=>"Stawowy", "wiek"=>"21", "wzrost"=>"186rew"}, "commit"=>"Update", "id"=>"1"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/users
+Rendering users/update
+Completed in 422ms (View: 281, DB: 31) | 200 OK [http://localhost/users/update/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show_all (for 127.0.0.1 at 2010-03-23 09:54:56) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/show_all
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 62ms (View: 47, DB: 0) | 200 OK [http://localhost/users/show_all]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#delete (for 127.0.0.1 at 2010-03-23 09:55:00) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '3') LIMIT 1[0m
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (31.2ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;36;1mUser Delete all (31.2ms)[0m   [0;1mDELETE FROM `users` WHERE (`id` IN (3)) [0m
+Rendering template within layouts/users
+Rendering users/delete
+Completed in 344ms (View: 47, DB: 62) | 200 OK [http://localhost/users/delete/3]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show_all (for 127.0.0.1 at 2010-03-23 09:55:07) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/show_all
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/users/show_all]
+  [4;36;1mSQL (46.9ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show_all (for 127.0.0.1 at 2010-04-08 19:20:41) [GET]
+  [4;36;1mUser Load (31.2ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/show_all
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 297ms (View: 250, DB: 78) | 200 OK [http://localhost/users/show_all]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 19:20:43) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 2438ms (View: 2422, DB: 0) | 200 OK [http://localhost/users/add]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 19:22:07) [POST]
+  Parameters: {"authenticity_token"=>"sxfpPT+nqNKqmSVgA8MOMArJk9zOCTPa7vhWoSeipXU=", "user"=>{"imie"=>"", "nazwisko"=>"", "wiek"=>"", "wzrost"=>""}, "commit"=>"add"}
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 109ms (View: 62, DB: 0) | 200 OK [http://localhost/users/add]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 19:23:16) [POST]
+  Parameters: {"authenticity_token"=>"sxfpPT+nqNKqmSVgA8MOMArJk9zOCTPa7vhWoSeipXU=", "user"=>{"imie"=>"", "nazwisko"=>"", "wiek"=>"", "wzrost"=>""}, "commit"=>"add"}
+  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 219ms (View: 172, DB: 16) | 200 OK [http://localhost/users/add]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 19:25:36) [POST]
+  Parameters: {"authenticity_token"=>"sxfpPT+nqNKqmSVgA8MOMArJk9zOCTPa7vhWoSeipXU=", "user"=>{"imie"=>"", "nazwisko"=>"", "wiek"=>"", "wzrost"=>""}, "commit"=>"add"}
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 94ms (View: 78, DB: 16) | 200 OK [http://localhost/users/add]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show_all (for 127.0.0.1 at 2010-04-08 19:25:52) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/show_all
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users/show_all]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 19:25:53) [GET]
+  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 47ms (View: 16, DB: 16) | 200 OK [http://localhost/users/add]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 19:25:55) [POST]
+  Parameters: {"authenticity_token"=>"sxfpPT+nqNKqmSVgA8MOMArJk9zOCTPa7vhWoSeipXU=", "user"=>{"imie"=>"", "nazwisko"=>"", "wiek"=>"", "wzrost"=>""}, "commit"=>"add"}
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 94ms (View: 62, DB: 16) | 200 OK [http://localhost/users/add]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show_all (for 127.0.0.1 at 2010-04-08 19:25:59) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/show_all
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/users/show_all]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 19:26:00) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/add]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 19:26:52) [GET]
+  [4;35;1mUser Columns (78.1ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 141ms (View: 47, DB: 78) | 200 OK [http://localhost/users/add]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show_all (for 127.0.0.1 at 2010-04-08 19:29:28) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/show_all
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 172ms (View: 94, DB: 16) | 200 OK [http://localhost/users/show_all]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 19:29:29) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 188ms (View: 156, DB: 0) | 200 OK [http://localhost/users/add]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show_all (for 127.0.0.1 at 2010-04-08 19:29:31) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/show_all
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 47ms (View: 31, DB: 16) | 200 OK [http://localhost/users/show_all]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 19:29:32) [GET]
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 16ms (View: 16, DB: 0) | 200 OK [http://localhost/users/add]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 19:29:33) [POST]
+  Parameters: {"authenticity_token"=>"sxfpPT+nqNKqmSVgA8MOMArJk9zOCTPa7vhWoSeipXU=", "user"=>{"imie"=>"", "nazwisko"=>"", "wiek"=>"", "wzrost"=>""}, "commit"=>"add"}
+  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 62ms (View: 31, DB: 31) | 200 OK [http://localhost/users/add]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 19:30:16) [POST]
+  Parameters: {"authenticity_token"=>"sxfpPT+nqNKqmSVgA8MOMArJk9zOCTPa7vhWoSeipXU=", "user"=>{"imie"=>"", "nazwisko"=>"", "wiek"=>"", "wzrost"=>""}, "commit"=>"add"}
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 94ms (View: 62, DB: 0) | 200 OK [http://localhost/users/add]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 19:30:42) [POST]
+  Parameters: {"authenticity_token"=>"sxfpPT+nqNKqmSVgA8MOMArJk9zOCTPa7vhWoSeipXU=", "user"=>{"imie"=>"", "nazwisko"=>"", "wiek"=>"", "wzrost"=>""}, "commit"=>"add"}
+  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 109ms (View: 62, DB: 31) | 200 OK [http://localhost/users/add]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 19:32:02) [POST]
+  Parameters: {"authenticity_token"=>"sxfpPT+nqNKqmSVgA8MOMArJk9zOCTPa7vhWoSeipXU=", "user"=>{"imie"=>"", "nazwisko"=>"", "wiek"=>"", "wzrost"=>""}, "commit"=>"add"}
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/users
+Rendering users/add
+ERROR: compiling _run_erb_app47views47users47add46html46erb RAISED C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/views/users/add.html.erb:31: syntax error, unexpected keyword_ensure, expecting keyword_end
+C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/views/users/add.html.erb:33: syntax error, unexpected $end, expecting keyword_end
+Function body:           def _run_erb_app47views47users47add46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div id=\"gora\"><h1>Add</h1></div>\n  "
+;  @user.errors.each do |attr,msg| ; @output_buffer.concat "\n  <table id=\"blad\">\n  "
+
+;  @user.errors.each do |attr,msg| ; @output_buffer.concat "\n  <tr><td> \n  "
+
+; @output_buffer.concat((  "#{attr} - #{msg}" ).to_s); @output_buffer.concat "\n  </td></tr>\n  "
+
+;  end ; @output_buffer.concat "\n  </table>\n"
+
+;  form_for(@user, :url => {:controller => :users, :action => :add, :id => @user}) do |f| ; @output_buffer.concat "\n  <div>\n  "
+
+; @output_buffer.concat(( f.label :imie ).to_s); @output_buffer.concat "<br />\n\t"
+; @output_buffer.concat(( f.text_field :imie ).to_s); @output_buffer.concat "<br />\n  <br />\n\t"
+
+; @output_buffer.concat(( f.label :nazwisko ).to_s); @output_buffer.concat "<br />\n\t"
+; @output_buffer.concat(( f.text_field :nazwisko ).to_s); @output_buffer.concat "<br />\n  <br />\n\t"
+
+; @output_buffer.concat(( f.label :wiek ).to_s); @output_buffer.concat "<br />\n\t"
+; @output_buffer.concat(( f.text_field :wiek ).to_s); @output_buffer.concat "<br />\n  <br />\n  "
+
+; @output_buffer.concat(( f.label :wzrost ).to_s); @output_buffer.concat "<br />\n  "
+; @output_buffer.concat(( f.text_field :wzrost ).to_s); @output_buffer.concat "<br />\n  <br />\n  </div>\n"
+
+
+; @output_buffer.concat(( f.submit 'add', :action => "show_all").to_s); @output_buffer.concat "\n"
+;  end ; @output_buffer.concat "\n<p>\n"
+
+; @output_buffer.concat(( link_to "back", :action => "show_all" ).to_s); @output_buffer.concat "\n</p>\n</div>"
+
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `module_eval'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `compile!'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby19/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby19/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action_with_flash'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process_with_filters'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `block in call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:8:in `synchronize'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+ActionView::TemplateError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/views/users/add.html.erb:31: syntax error, unexpected keyword_ensure, expecting keyword_end
+C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/views/users/add.html.erb:33: syntax error, unexpected $end, expecting keyword_end) on line #31 of app/views/users/add.html.erb:
+28: <%= link_to "back", :action => "show_all" %>
+29: </p>
+30: </div>
+
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (1375.0ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 19:32:32) [POST]
+  Parameters: {"authenticity_token"=>"sxfpPT+nqNKqmSVgA8MOMArJk9zOCTPa7vhWoSeipXU=", "user"=>{"imie"=>"", "nazwisko"=>"", "wiek"=>"", "wzrost"=>""}, "commit"=>"add"}
+  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 125ms (View: 47, DB: 31) | 200 OK [http://localhost/users/add]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 19:36:06) [POST]
+  Parameters: {"authenticity_token"=>"sxfpPT+nqNKqmSVgA8MOMArJk9zOCTPa7vhWoSeipXU=", "user"=>{"imie"=>"", "nazwisko"=>"", "wiek"=>"", "wzrost"=>""}, "commit"=>"add"}
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 94ms (View: 47, DB: 0) | 200 OK [http://localhost/users/add]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show_all (for 127.0.0.1 at 2010-04-08 19:55:13) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/show_all
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 47ms (View: 16, DB: 16) | 200 OK [http://localhost/users/show_all]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show (for 127.0.0.1 at 2010-04-08 19:55:16) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/users
+Rendering users/show
+Completed in 188ms (View: 47, DB: 31) | 200 OK [http://localhost/users/show/1]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show_all (for 127.0.0.1 at 2010-04-08 19:55:34) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/show_all
+  [4;36;1mUser Columns (31.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 62ms (View: 16, DB: 31) | 200 OK [http://localhost/users/show_all]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 19:56:38) [GET]
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 1109ms (View: 1000, DB: 16) | 200 OK [http://localhost/users/add]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 20:00:07) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 453ms (View: 359, DB: 0) | 200 OK [http://localhost/users/add]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 20:02:35) [GET]
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 47ms (View: 31, DB: 16) | 200 OK [http://localhost/users/add]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 20:03:17) [POST]
+  Parameters: {"authenticity_token"=>"sxfpPT+nqNKqmSVgA8MOMArJk9zOCTPa7vhWoSeipXU=", "user"=>{"imie"=>"", "nazwisko"=>"", "wiek"=>"", "wzrost"=>""}, "commit"=>"Add"}
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 78ms (View: 47, DB: 0) | 200 OK [http://localhost/users/add]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 20:05:24) [POST]
+  Parameters: {"authenticity_token"=>"sxfpPT+nqNKqmSVgA8MOMArJk9zOCTPa7vhWoSeipXU=", "user"=>{"imie"=>"", "nazwisko"=>"", "wiek"=>"", "wzrost"=>""}, "commit"=>"Add"}
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 78ms (View: 62, DB: 16) | 200 OK [http://localhost/users/add]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 20:05:31) [POST]
+  Parameters: {"authenticity_token"=>"sxfpPT+nqNKqmSVgA8MOMArJk9zOCTPa7vhWoSeipXU=", "user"=>{"imie"=>"", "nazwisko"=>"", "wiek"=>"", "wzrost"=>""}, "commit"=>"Add"}
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 94ms (View: 47, DB: 0) | 200 OK [http://localhost/users/add]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 20:07:12) [POST]
+  Parameters: {"authenticity_token"=>"sxfpPT+nqNKqmSVgA8MOMArJk9zOCTPa7vhWoSeipXU=", "user"=>{"imie"=>"", "nazwisko"=>"", "wiek"=>"", "wzrost"=>""}, "commit"=>"Add"}
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 109ms (View: 62, DB: 16) | 200 OK [http://localhost/users/add]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show_all (for 127.0.0.1 at 2010-04-08 20:07:29) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/show_all
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 62ms (View: 0, DB: 16) | 200 OK [http://localhost/users/show_all]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 20:07:32) [GET]
+  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 31ms (View: 16, DB: 16) | 200 OK [http://localhost/users/add]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 20:09:08) [GET]
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 156ms (View: 141, DB: 0) | 200 OK [http://localhost/users/add]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 20:09:39) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 109ms (View: 62, DB: 0) | 200 OK [http://localhost/users/add]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 20:10:02) [GET]
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 62ms (View: 47, DB: 16) | 200 OK [http://localhost/users/add]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 20:14:04) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 47ms (View: 47, DB: 0) | 200 OK [http://localhost/users/add]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 20:14:32) [POST]
+  Parameters: {"authenticity_token"=>"sxfpPT+nqNKqmSVgA8MOMArJk9zOCTPa7vhWoSeipXU=", "user"=>{"imie"=>"", "nazwisko"=>"", "wiek"=>"", "wzrost"=>""}, "commit"=>"Add"}
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 62ms (View: 31, DB: 0) | 200 OK [http://localhost/users/add]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show_all (for 127.0.0.1 at 2010-04-08 20:15:47) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/show_all
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 47ms (View: 16, DB: 16) | 200 OK [http://localhost/users/show_all]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 20:15:48) [GET]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Rendering template within layouts/users
+Rendering users/add
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/add]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 20:15:57) [POST]
+  Parameters: {"authenticity_token"=>"sxfpPT+nqNKqmSVgA8MOMArJk9zOCTPa7vhWoSeipXU=", "user"=>{"imie"=>"Nooo", "nazwisko"=>"kurde", "wiek"=>"12", "wzrost"=>"354635435"}, "commit"=>"Add"}
+  [4;35;1mUser Columns (31.2ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (93.8ms)[0m   [0mINSERT INTO `users` (`imie`, `nazwisko`, `wiek`, `created_at`, `updated_at`, `wzrost`) VALUES('Nooo', 'kurde', 12, '2010-04-08 18:15:57', '2010-04-08 18:15:57', 354635435)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/show_all
+Completed in 141ms (DB: 125) | 302 Found [http://localhost/users/add]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show_all (for 127.0.0.1 at 2010-04-08 20:15:58) [GET]
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/show_all
+  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/users/show_all]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-04-08 20:16:06) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '2') LIMIT 1[0m
+  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/update
+Completed in 1078ms (View: 1000, DB: 16) | 200 OK [http://localhost/users/update/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show_all (for 127.0.0.1 at 2010-04-08 20:17:18) [GET]
   [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT * FROM `users` [0m
 Rendering template within layouts/users
 Rendering users/show_all
@@ -1719,67 +935,438 @@ Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/users/show_all]
   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#add (for 127.0.0.1 at 2010-03-22 23:17:26) [GET]
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 20:17:19) [GET]
   [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
 Rendering template within layouts/users
 Rendering users/add
-Completed in 16ms (View: 0, DB: 16) | 200 OK [http://localhost/users/add]
+Completed in 31ms (View: 16, DB: 16) | 200 OK [http://localhost/users/add]
   [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 23:18:00) [GET]
+Processing UsersController#add (for 127.0.0.1 at 2010-04-08 20:18:14) [POST]
+  Parameters: {"authenticity_token"=>"sxfpPT+nqNKqmSVgA8MOMArJk9zOCTPa7vhWoSeipXU=", "user"=>{"imie"=>"asdasd", "nazwisko"=>"asdasd", "wiek"=>"12", "wzrost"=>"313"}, "commit"=>"Add"}
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mINSERT INTO `users` (`imie`, `nazwisko`, `wiek`, `created_at`, `updated_at`, `wzrost`) VALUES('asdasd', 'asdasd', 12, '2010-04-08 18:18:14', '2010-04-08 18:18:14', 313)[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (15.6ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/users/show_all
+Completed in 47ms (DB: 31) | 302 Found [http://localhost/users/add]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show_all (for 127.0.0.1 at 2010-04-08 20:18:14) [GET]
   [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
 Rendering template within layouts/users
 Rendering users/show_all
-  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/users/show_all]
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/show_all]
   [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#show (for 127.0.0.1 at 2010-03-22 23:18:02) [GET]
-  Parameters: {"id"=>"1"}
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '1') LIMIT 1[0m
+Processing UsersController#update (for 127.0.0.1 at 2010-04-08 20:19:03) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '3') LIMIT 1[0m
   [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-  [4;35;1mUser Load (15.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
 Rendering template within layouts/users
-Rendering users/show
-Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/users/show/1]
+Rendering users/update
+Completed in 31ms (View: 0, DB: 0) | 200 OK [http://localhost/users/update/3]
   [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
   [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#show (for 127.0.0.1 at 2010-03-22 23:18:04) [GET]
-  Parameters: {"id"=>"1123"}
-  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '1123') LIMIT 1[0m
-Redirected to http://localhost:3000/users/error
-Completed in 16ms (DB: 0) | 302 Found [http://localhost/users/show/1123]
+Processing UsersController#update (for 127.0.0.1 at 2010-04-08 20:20:23) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '3') LIMIT 1[0m
+  [4;35;1mUser Columns (140.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/update
+ERROR: compiling _run_erb_app47views47users47update46html46erb RAISED C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/views/users/update.html.erb:46: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _run_erb_app47views47users47update46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div id=\"gora\"><h1>Update</h1></div>\n<div>\n  <p>\n    <b>Aktualne dane uzytkownika w bazie danych:</b><br />\n    Imie: "
+
+
+
+; @output_buffer.concat(( @user.imie ).to_s); @output_buffer.concat "<br />\n    Nazwisko: "
+; @output_buffer.concat(( @user.nazwisko ).to_s); @output_buffer.concat "<br />\n    Wiek: "
+; @output_buffer.concat(( @user.wiek ).to_s); @output_buffer.concat "<br/>\n    Wzrost: "
+; @output_buffer.concat(( @user.wzrost ).to_s); @output_buffer.concat "<br/>\n  </p>\n</div>  \n<div>\n  <table id=\"blad\">\n  <tr><td> \n  "
+
+
+
+
+
+; @output_buffer.concat((  "#{attr} - #{msg}" ).to_s); @output_buffer.concat "\n  </td></tr>\n  </table>\n  "
+
+
+;  end ; @output_buffer.concat "\n\n"
+
+;  form_for(@user, :url => {:controller => :users, :action => :update, :id => @user}) do |f| ; @output_buffer.concat "\n  <div>\n  "
+
+; @output_buffer.concat(( f.label :imie ).to_s); @output_buffer.concat "</div>\n  <div>\n  "
+
+; @output_buffer.concat(( f.text_field :imie ).to_s); @output_buffer.concat "</div>\n  <div>\n  "
+
+; @output_buffer.concat(( f.label :nazwisko ).to_s); @output_buffer.concat "</div>\n  <div>\n  "
+
+; @output_buffer.concat(( f.text_field :nazwisko ).to_s); @output_buffer.concat "</div>\n  <div>\n  "
+
+; @output_buffer.concat(( f.label :wiek ).to_s); @output_buffer.concat "</div>\n  <div>\n  "
+
+; @output_buffer.concat(( f.text_field :wiek ).to_s); @output_buffer.concat "</div>\n  <div>\n  "
+
+; @output_buffer.concat(( f.label :wzrost ).to_s); @output_buffer.concat "</div>\n  <div>\n  "
+
+; @output_buffer.concat(( f.text_field :wzrost ).to_s); @output_buffer.concat "\n  </div>\n<div>\n"
+
+
+; @output_buffer.concat(( f.submit 'Update').to_s); @output_buffer.concat "\n</div>\n"
+
+;  end ; @output_buffer.concat "\n</div>\n<div>  \n<br /><br />\n"
+
+
+
+; @output_buffer.concat(( link_to "Back", :action => "show_all" ).to_s); @output_buffer.concat "\n</div>"
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `module_eval'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `compile!'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby19/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby19/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action_with_flash'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process_with_filters'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `block in call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:8:in `synchronize'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+ActionView::TemplateError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/views/users/update.html.erb:46: syntax error, unexpected keyword_ensure, expecting $end) on line #46 of app/views/users/update.html.erb:
+43: <br /><br />
+44: <%= link_to "Back", :action => "show_all" %>
+45: </div>
+
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (562.5ms)
+Rendered rescues/_request_and_response (15.6ms)
+Rendering rescues/layout (internal_server_error)
   [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#error (for 127.0.0.1 at 2010-03-22 23:18:04) [GET]
+Processing UsersController#update (for 127.0.0.1 at 2010-04-08 20:21:07) [GET]
+  Parameters: {"id"=>"3"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '3') LIMIT 1[0m
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
 Rendering template within layouts/users
-Rendering users/error
-Completed in 31ms (View: 31, DB: 0) | 200 OK [http://localhost/users/error]
+Rendering users/update
+ERROR: compiling _run_erb_app47views47users47update46html46erb RAISED C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/views/users/update.html.erb:46: syntax error, unexpected keyword_ensure, expecting $end
+Function body:           def _run_erb_app47views47users47update46html46erb(local_assigns)
+            old_output_buffer = output_buffer;;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<div id=\"gora\"><h1>Update</h1></div>\n<div>\n  <p>\n    <b>Aktualne dane uzytkownika w bazie danych:</b><br />\n    Imie: "
+
+
+
+; @output_buffer.concat(( @user.imie ).to_s); @output_buffer.concat "<br />\n    Nazwisko: "
+; @output_buffer.concat(( @user.nazwisko ).to_s); @output_buffer.concat "<br />\n    Wiek: "
+; @output_buffer.concat(( @user.wiek ).to_s); @output_buffer.concat "<br/>\n    Wzrost: "
+; @output_buffer.concat(( @user.wzrost ).to_s); @output_buffer.concat "<br/>\n  </p>\n</div>  \n<div>\n  <table id=\"blad\">\n  <tr><td> \n  "
+
+
+
+
+
+; @output_buffer.concat((  "#{attr} - #{msg}" ).to_s); @output_buffer.concat "\n  </td></tr>\n  </table>\n  "
+
+
+;  end ; @output_buffer.concat "\n\n"
+
+;  form_for(@user, :url => {:controller => :users, :action => :update, :id => @user}) do |f| ; @output_buffer.concat "\n  <div>\n  "
+
+; @output_buffer.concat(( f.label :imie ).to_s); @output_buffer.concat "</div>\n  <div>\n  "
+
+; @output_buffer.concat(( f.text_field :imie ).to_s); @output_buffer.concat "</div>\n  <div>\n  "
+
+; @output_buffer.concat(( f.label :nazwisko ).to_s); @output_buffer.concat "</div>\n  <div>\n  "
+
+; @output_buffer.concat(( f.text_field :nazwisko ).to_s); @output_buffer.concat "</div>\n  <div>\n  "
+
+; @output_buffer.concat(( f.label :wiek ).to_s); @output_buffer.concat "</div>\n  <div>\n  "
+
+; @output_buffer.concat(( f.text_field :wiek ).to_s); @output_buffer.concat "</div>\n  <div>\n  "
+
+; @output_buffer.concat(( f.label :wzrost ).to_s); @output_buffer.concat "</div>\n  <div>\n  "
+
+; @output_buffer.concat(( f.text_field :wzrost ).to_s); @output_buffer.concat "\n  </div>\n  <div>\n  "
+
+
+; @output_buffer.concat(( f.submit 'Update').to_s); @output_buffer.concat "\n  </div>\n  "
+
+;  end ; @output_buffer.concat "\n</div>\n<div>  \n<br /><br />\n"
+
+
+
+; @output_buffer.concat(( link_to "Back", :action => "show_all" ).to_s); @output_buffer.concat "\n</div>"
+; @output_buffer.force_encoding(__ENCODING__)
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `module_eval'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:77:in `compile!'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:61:in `compile'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/renderable.rb:28:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/template.rb:205:in `render_template'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:265:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:348:in `_render_with_layout'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_view/base.rb:262:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1250:in `render_for_file'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:945:in `render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `block in render_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby19/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:51:in `render_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1326:in `default_render'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:1332:in `perform_action'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:617:in `call_filters'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:610:in `perform_action_with_filters'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `block in perform_action_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `block in ms'
+C:/Ruby19/lib/ruby/1.9.1/benchmark.rb:309:in `realtime'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activesupport-2.3.5/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/benchmarking.rb:68:in `perform_action_with_benchmark'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/rescue.rb:160:in `perform_action_with_rescue'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/flash.rb:146:in `perform_action_with_flash'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:532:in `process'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/filters.rb:606:in `process_with_filters'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:391:in `process'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/base.rb:386:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/routing/route_set.rb:437:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:87:in `dispatch'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:121:in `_call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:130:in `block in build_middleware_stack'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:29:in `block in call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:9:in `cache'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/query_cache.rb:28:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/activerecord-2.3.5/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/string_coercion.rb:25:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/head.rb:9:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/methodoverride.rb:24:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/params_parser.rb:15:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/session/cookie_store.rb:93:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/failsafe.rb:26:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `block in call'
+<internal:prelude>:8:in `synchronize'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/lock.rb:11:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:114:in `block in call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/reloader.rb:34:in `run'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/actionpack-2.3.5/lib/action_controller/dispatcher.rb:108:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/static.rb:31:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:46:in `block in call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `each'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/urlmap.rb:40:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rails-2.3.5/lib/rails/rack/log_tailer.rb:17:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/content_length.rb:13:in `call'
+C:/Ruby19/lib/ruby/gems/1.9.1/gems/rack-1.0.1/lib/rack/handler/webrick.rb:50:in `service'
+C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+ActionView::TemplateError (C:/Documents and Settings/Marek/Moje dokumenty/zadanie/app/views/users/update.html.erb:46: syntax error, unexpected keyword_ensure, expecting $end) on line #46 of app/views/users/update.html.erb:
+43: <br /><br />
+44: <%= link_to "Back", :action => "show_all" %>
+45: </div>
+
+    <internal:prelude>:8:in `synchronize'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+    C:/Ruby19/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendered rescues/_trace (171.9ms)
+Rendered rescues/_request_and_response (0.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-04-08 20:22:42) [GET]
+  Parameters: {"id"=>"3"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '3') LIMIT 1[0m
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 3) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/update
+Completed in 78ms (View: 31, DB: 16) | 200 OK [http://localhost/users/update/3]
   [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
   [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
 
 
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 23:18:06) [GET]
-  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
-Rendering template within layouts/users
-Rendering users/show_all
-  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-Completed in 31ms (View: 0, DB: 16) | 200 OK [http://localhost/users/show_all]
-  [4;35;1mSQL (15.6ms)[0m   [0mSET NAMES 'utf8'[0m
-  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
-
-
-Processing UsersController#show_all (for 127.0.0.1 at 2010-03-22 23:18:48) [GET]
+Processing UsersController#show_all (for 127.0.0.1 at 2010-04-08 20:23:26) [GET]
   [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` [0m
 Rendering template within layouts/users
 Rendering users/show_all
   [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
-Completed in 16ms (View: 16, DB: 16) | 200 OK [http://localhost/users/show_all]
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/show_all]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-04-08 20:23:29) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '2') LIMIT 1[0m
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/update
+Completed in 47ms (View: 16, DB: 0) | 200 OK [http://localhost/users/update/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-04-08 20:25:03) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '2') LIMIT 1[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (15.6ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/update
+Completed in 250ms (View: 219, DB: 16) | 200 OK [http://localhost/users/update/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-04-08 20:25:05) [GET]
+  Parameters: {"id"=>"2"}
+  [4;35;1mUser Load (15.6ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '2') LIMIT 1[0m
+  [4;36;1mUser Columns (31.2ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/update
+Completed in 609ms (View: 125, DB: 47) | 200 OK [http://localhost/users/update/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show_all (for 127.0.0.1 at 2010-04-08 20:25:07) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/show_all
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 78ms (View: 31, DB: 16) | 200 OK [http://localhost/users/show_all]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-04-08 20:25:09) [GET]
+  Parameters: {"id"=>"2"}
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '2') LIMIT 1[0m
+  [4;35;1mUser Columns (15.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (15.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mCOMMIT[0m
+Rendering template within layouts/users
+Rendering users/update
+Completed in 234ms (View: 0, DB: 31) | 200 OK [http://localhost/users/update/2]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#update (for 127.0.0.1 at 2010-04-08 20:25:36) [PUT]
+  Parameters: {"authenticity_token"=>"sxfpPT+nqNKqmSVgA8MOMArJk9zOCTPa7vhWoSeipXU=", "user"=>{"imie"=>"Nooo", "nazwisko"=>"kurde", "wiek"=>"12", "wzrost"=>""}, "commit"=>"Update", "id"=>"2"}
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT `users`.id FROM `users` WHERE (`users`.`id` = '2') LIMIT 1[0m
+  [4;36;1mUser Columns (15.6ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 2) [0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/users
+Rendering users/update
+Completed in 47ms (View: 31, DB: 16) | 200 OK [http://localhost/users/update/2]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing UsersController#show_all (for 127.0.0.1 at 2010-04-08 20:25:38) [GET]
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/show_all
+  [4;35;1mUser Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Completed in 31ms (View: 16, DB: 0) | 200 OK [http://localhost/users/show_all]

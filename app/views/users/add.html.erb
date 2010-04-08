@@ -1,30 +1,36 @@
 <div id="gora"><h1>Add</h1></div>
-  <table id="blad">
+  
   <% @user.errors.each do |attr,msg| %>
+  <table id="blad">
   <tr><td> 
   <%=  "#{attr} - #{msg}" %>
   </td></tr>
-  <% end %>
   </table>
-<div>  
-<% form_for(@user, :url => {:controller => :users, :action => :add, :id => @user}) do |f| %>
-  <%= f.label :imie %><br />
-	<%= f.text_field :imie %><br />
-  <br />
-	<%= f.label :nazwisko %><br />
-	<%= f.text_field :nazwisko %><br />
-  <br />
-	<%= f.label :wiek %><br />
-	<%= f.text_field :wiek %><br />
-  <br />
-  <%= f.label :wzrost %><br />
-  <%= f.text_field :wzrost %><br />
-  <br />
+  <% end %>
   
-	<%= f.submit 'add', :action => "show_all"%>
-
-<% end %>
-
-<br/><br/>
-<%= link_to "back", :action => "show_all" %>
+  
+<% form_for(@user, :url => {:controller => :users, :action => :add, :id => @user}) do |f| %>
+  <div>
+  <%= f.label :imie %></div>
+	<div>
+  <%= f.text_field :imie %></div>
+	<div>
+  <%= f.label :nazwisko %></div>
+	<div>
+  <%= f.text_field :nazwisko %></div>
+	<div>
+  <%= f.label :wiek %></div>
+	<div>
+  <%= f.text_field :wiek %></div>
+  <div>
+  <%= f.label :wzrost %></div>
+  <div>
+  <%= f.text_field :wzrost %>
+  </div>
+<div>
+<%= f.submit 'Add'%>
 </div>
+<% end %>
+<p>
+<%= link_to "back", :action => "show_all" %>
+</p>
